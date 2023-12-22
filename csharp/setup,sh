@@ -1,0 +1,12 @@
+sudo apt-get update && sudo apt-get install -y dotnet-sdk-8.0
+
+cd back
+dotnet restore && dotnet build 
+
+cd ../front 
+dotnet restore && dotnet build 
+
+cd ../middle 
+dotnet restore && dotnet build 
+
+

@@ -1,0 +1,18 @@
+Instrumentation steps:
+
+go to relevant project folder
+```
+dotnet add package OpenTelemetry
+dotnet add package OpenTelemetry.Api
+dotnet add package OpenTelemetry.Exporter.Zipkin
+dotnet add package OpenTelemetry.Exporter.Console
+dotnet add package OpenTelemetry.Extensions.Hosting
+
+dotnet add package OpenTelemetry.Instrumentation.Http
+
+dotnet add package OpenTelemetry.Instrumentation.Http --prerelease
+dotnet add package OpenTelemetry.Instrumentation.AspNetCore --prerelease
+```
+
+Follow cli commands from this page for automatic instrumentation
+https://opentelemetry.io/docs/instrumentation/net/automatic/getting-started/
