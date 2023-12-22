@@ -5,6 +5,7 @@ The python servers are written in Flask. In order to run them you should first i
 
 To run opentelemetries, you also need to install the opentelemetry package:
 > pip install opentelemetry-distro
+
 > opentelemetry-bootstrap -a install
 
 
