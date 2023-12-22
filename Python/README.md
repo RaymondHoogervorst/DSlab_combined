@@ -67,6 +67,7 @@ In the browser, open the desired workload with one of these URL's:
 Open 3 terminals, on each, open the virtual environment and cd into the bare directory:
 
 > cd benchmarks
+
 > export OTEL_PYTHON_LOGGING_AUTO_INSTRUMENTATION_ENABLED=true
 
 
@@ -84,6 +85,7 @@ This will be the front end. Execute the following:
 This will be the middle end. Execute the following:
 
 > cd middle
+
 > opentelemetry-instrument \
     --traces_exporter console \
     --metrics_exporter console \
@@ -94,6 +96,7 @@ This will be the middle end. Execute the following:
 This will be the back end. Execute the following: 
 
 > cd back
+
 > opentelemetry-instrument \
     --traces_exporter console \
     --metrics_exporter console \
